@@ -29,5 +29,3 @@ export class UiService {
     return this.subject.asObservable();
   }
 }
-
-
