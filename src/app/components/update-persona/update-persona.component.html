@@ -1,0 +1,13 @@
+<form ngNativeValidate (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <!--label for="nome">Nome</label-->
+        <input type="text" name="nome" [(ngModel)]="persona.nome" id="nome" placeholder="Nome" required/>
+        <!--label for="cognome">Cognome</label-->
+        <input type="text" name="cognome" [(ngModel)]="persona.cognome" id="cognome" placeholder="Cognome" required/>
+        <!--label for="numero_telefono">Numero</label-->
+        <input type="text" name="numero_telefono" [(ngModel)]="persona.recapito.numero_telefono" id="numero_telefono" placeholder="Numero" required/>
+        <!--label for="email">E-Mail</label-->
+        <input type="email" name="email" [(ngModel)]="persona.recapito.email" id="email" placeholder="E-Mail" />
+        <input type="submit" value="Update Persona" class="btn btn-blocks"/>
+    </div>
+</form>

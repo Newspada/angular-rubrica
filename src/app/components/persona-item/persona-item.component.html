@@ -1,0 +1,5 @@
+<div class="persona">
+    <h4>{{persona.nome}} {{persona.cognome}} <fa-icon (click)="onToggleDelete()" [ngStyle]="{'color': 'red'}" [icon] = "faTimes"></fa-icon> </h4>
+    <p>{{persona.recapito.numero_telefono}} <fa-icon (click)="onToggleUpdate()" [ngStyle]="{'color': 'blue'}" [icon] = "faWrench"></fa-icon> </p>
+    <p>{{persona.recapito.email}}</p>
+</div>

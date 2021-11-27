@@ -1,0 +1,10 @@
+<app-add-persona *ngIf="state === UiServiceStates.ADD" (onAddPersona) = "addPersona($event)"></app-add-persona>
+<app-update-persona *ngIf="state === UiServiceStates.UPDATE" [persona]="personaToUpdate" (onUpdatePersona) = "updatePersona($event)"></app-update-persona>
+<div style="max-height: 280px; overflow-y: auto;">
+  <app-persona-item
+    *ngFor="let persona of elencoPersona"
+    [persona]="persona"
+    (onDeletePersona) = "deletePersona(persona)"
+    (onUpdatePersona) = "toggleUpdatePersona(persona)"
+  ></app-persona-item>
+</div>
